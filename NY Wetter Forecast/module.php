@@ -27,7 +27,7 @@ declare(strict_types=1);
 			$lat = $this->ReadPropertyString('Latitude');
 			$nam = $this->ReadPropertyString('Name');
 		}
-	}
+	
 // create curl resource
 	$ch = curl_init();
 // url setzen
@@ -47,3 +47,4 @@ declare(strict_types=1);
     	IPS_SetName($CatID, "NY-Wetterdaten");                                  // Kategorie benennen
     	IPS_SetParent($CatID, $id);                                             // Kategorie einsortieren unter dem Objekt mit der ID "12345"
 	}
+}
