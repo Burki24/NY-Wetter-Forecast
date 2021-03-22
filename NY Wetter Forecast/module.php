@@ -8,7 +8,7 @@ declare(strict_types=1);
 			//Never delete this line!
 			parent::Create();
 
-			$this->RequireParent('{4CB91589-CE01-4700-906F-26320EFCF6C4}');
+			$this->RequireParent('{BBD65439-F443-47B3-66A5-C2DF81C7934D}');
 
 
 			$this->RegisterPropertyString('Longitude', '');
