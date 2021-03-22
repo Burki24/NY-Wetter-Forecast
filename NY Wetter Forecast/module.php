@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-	class NY_Wetter extends IPSModule
+	class NYWetterForecast extends IPSModule
 	{
 		public function Create()
 		{
