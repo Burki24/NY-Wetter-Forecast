@@ -8,9 +8,6 @@ declare(strict_types=1);
 			//Never delete this line!
 			parent::Create();
 
-			$this->RequireParent('{BBD65439-F443-47B3-66A5-C2DF81C7934D}');
-
-
 			$this->RegisterPropertyString('Longitude', '');
 			$this->RegisterPropertyString('Latitude', '');
 			$this->RegisterPropertyString('Name', '');
