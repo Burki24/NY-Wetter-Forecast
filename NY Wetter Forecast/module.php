@@ -36,7 +36,7 @@ declare(strict_types=1);
 
 		public function ReceiveData($JSONString)
 		{
-				// create curl resource
+		// create curl resource
 			$ch = curl_init();
 
 		// url setzen
@@ -52,7 +52,7 @@ declare(strict_types=1);
 			$data = json_decode($JSONString);  // String in array wandeln
 			
 		}
-	
+		{
 		// Anlegen einer neuen Kategorie "NY-Wetterdaten"
 
 			$id = IPS_GetParent($_IPS['SELF']);
