@@ -1,0 +1,12 @@
+{
+    "id": "{84B39DE4-816F-79C9-D5B7-E8CF828963E4}",
+    "name": "NY Wetter Forecast",
+    "type": 3,
+    "vendor": "Burki24",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "NYW",
+    "url": "https://github.com/Burki24/NY-Wetter-Forecast"
+}
