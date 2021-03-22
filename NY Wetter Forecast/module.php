@@ -23,15 +23,9 @@ declare(strict_types=1);
 		{
 			//Never delete this line!
 			parent::ApplyChanges();
-
 			$lot = $this->ReadPropertyString('Longitude');
 			$lat = $this->ReadPropertyString('Latitude');
 			$nam = $this->ReadPropertyString('Name');
-		
-					}
-
-		public function Send(string $RequestMethod, string $RequestURL, string $RequestData, int $Timeout)
-		{
 		}
 
 		private function ReceiveData($JSONString)
@@ -50,9 +44,9 @@ declare(strict_types=1);
 
 			curl_close($ch); // curl schliessen zwecks Speicher-Entlastung
 			$data = json_decode($JSONString);  // String in array wandeln
-			
 		}
-		public function IPS_CreateCategory
+
+		public function IPS_CreateCategory()
 		{
 		// Anlegen einer neuen Kategorie "NY-Wetterdaten"
 
@@ -62,7 +56,5 @@ declare(strict_types=1);
         		$CatID = IPS_CreateCategory();                                          // Kategorie anlegen
         		IPS_SetName($CatID, "NY-Wetterdaten");                                  // Kategorie benennen
         		IPS_SetParent($CatID, $id);                                             // Kategorie einsortieren unter dem Objekt mit der ID "12345"
-    }
-		
 		}
-
+	}
