@@ -94,7 +94,7 @@ declare(strict_types=1);
                 }
             }
         }
-        private function CreateProfile()
+        public function CreateProfile()
         {
             // Erstellen fehlendes Profil "UVI"
 
@@ -105,7 +105,7 @@ declare(strict_types=1);
             }
         }
 
-        private function SetProfile()
+        public function SetProfile()
         {
             // Zuteilen der Profile
 
