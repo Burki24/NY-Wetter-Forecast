@@ -26,7 +26,7 @@ declare(strict_types=1);
 			$lot = $this->ReadPropertyString('Longitude');
 			$lat = $this->ReadPropertyString('Latitude');
 			$nam = $this->ReadPropertyString('Name');	
-		};	
+		}
 			// create curl resource
 			$ch = curl_init();
 			// url setzen
