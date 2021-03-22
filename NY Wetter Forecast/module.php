@@ -28,7 +28,6 @@ declare(strict_types=1);
             $nam = $this->ReadPropertyString('Name');
         }
 
-		<?php
 // create curl resource
     $ch = curl_init();
 
