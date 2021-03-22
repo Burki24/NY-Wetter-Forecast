@@ -52,4 +52,16 @@ declare(strict_types=1);
 			$data = json_decode($JSONString);  // String in array wandeln
 			
 		}
-	}
+	
+		// Anlegen einer neuen Kategorie "NY-Wetterdaten"
+
+			$id = IPS_GetParent($_IPS['SELF']);
+			$childid = @IPS_GetCategoryIDByName("NY-Wetterdaten", $id);
+    		if ($childid === false){                                                    // Prüfen, ob Kategorie existiert
+        		$CatID = IPS_CreateCategory();                                          // Kategorie anlegen
+        		IPS_SetName($CatID, "NY-Wetterdaten");                                  // Kategorie benennen
+        		IPS_SetParent($CatID, $id);                                             // Kategorie einsortieren unter dem Objekt mit der ID "12345"
+    }
+		
+		}
+
