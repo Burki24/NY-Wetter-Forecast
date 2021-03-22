@@ -26,8 +26,9 @@ declare(strict_types=1);
 			$lot = $this->ReadPropertyString('Longitude');
 			$lat = $this->ReadPropertyString('Latitude');
 			$nam = $this->ReadPropertyString('Name');	
+		}	
 			// create curl resource
-			$ch = $this->curl_init();
+			$ch = curl_init();
 			// url setzen
 			curl_setopt($ch, CURLOPT_URL, "https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=$lat&lon=$lot");
 			// daten als String setzen und Browser vorgeben
@@ -44,5 +45,4 @@ declare(strict_types=1);
     	IPS_SetName($CatID, "NY-Wetterdaten");                                  // Kategorie benennen
     	IPS_SetParent($CatID, $id);                                             // Kategorie einsortieren unter dem Objekt mit der ID "12345"
 	}
-}
 }
