@@ -28,7 +28,7 @@ declare(strict_types=1);
             $nam = $this->ReadPropertyString('Name');
         }
 
-        private function ReceiveData($JSONString)
+        public function ReceiveData($JSONString)
         {
             // create curl resource
             $ch = curl_init();
