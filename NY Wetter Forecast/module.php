@@ -29,7 +29,7 @@ declare(strict_types=1);
 		}
 	
 // create curl resource
-	$ch = curl_init();
+	$ch = $this->curl_init();
 // url setzen
 	curl_setopt($ch, CURLOPT_URL, "https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=$lat&lon=$lot");
 // daten als String setzen und Browser vorgeben
