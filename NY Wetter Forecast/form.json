@@ -1,7 +1,7 @@
 {
     "elements": 
     [
-        {"type": "SelectLocation", "name": "Location", "caption": "Location"},
+        {"type": "SelectLocation", "name": "Location", "caption": "Location"}
     ],  
 
     "actions":
