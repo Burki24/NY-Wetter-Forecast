@@ -2,7 +2,6 @@
     "elements": 
     [
         {"type": "SelectLocation", "name": "Location", "caption": "Location"},
-        {"type": "ValidationTextBox", "name": "Ort", "caption": "Ort"}
     ],  
 
     "actions":
