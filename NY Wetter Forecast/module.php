@@ -7,10 +7,7 @@ declare(strict_types=1);
             {
             //Never delete this line!
             parent::Create();
-
-            $this->RegisterPropertyString('Longitude', '');
-            $this->RegisterPropertyString('Latitude', '');
-            $this->RegisterPropertyString('Name', '');
+            $this->RegisterPropertyString("Location", '{"latitude":0,"longitude":0}');
             }
 
             public function Destroy()
