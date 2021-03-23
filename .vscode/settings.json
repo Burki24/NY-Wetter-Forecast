@@ -3,6 +3,10 @@
         "Luftdruck",
         "Lufttemperatur",
         "Temperatur",
-        "public"
+        "ny",
+        "public",
+        "speed",
+        "wind",
+        "windgeschwindigkeit"
     ]
 }
