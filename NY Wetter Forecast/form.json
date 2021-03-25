@@ -1,5 +1,11 @@
 {
-    "elements": [],
-    "actions": [],
-    "status": []
+    "elements": 
+    [
+        {"type": "SelectLocation", "name": "Location", "caption": "Location"}
+    ],  
+
+    "actions":
+    [
+        {"name": "Update Wetterdaten", "type": "Button", "caption": "Update"}
+    ]
 }
